@@ -1,0 +1,44 @@
+<section class="editor-wrapper">
+    <header>
+        <span></span>
+    </header>
+    <main>
+        <div class="row-container info-container display-container">
+            <select>
+                <option value="320x200">320x200</option>
+                <option value="640x480">640x480</option>
+                <option value="800x600">800x600</option>
+                <option value="1024x800">1024x800</option>
+                <option value="1920x1080">1920x1080</option>
+            </select>
+            <select>
+                <option value="contain">Contain</option>
+                <option value="stretch">Stretch</option>
+            </select>
+        </div>
+        <label>Player</label>
+        <dl class="row-container info-container info-container--player">
+            <dt>x</dt>
+            <dd></dd>
+            <dt>z</dt>
+            <dd></dd>
+            <dt>r</dt>
+            <dd></dd>
+            <dt>gx</dt>
+            <dd></dd>
+            <dt>gz</dt>
+            <dd></dd>
+            <dt>g</dt>
+            <dd></dd>
+        </dl>
+
+        <label>Selected object <span class="label--right"></span></label>
+        <div class="row-container selected-object-container">
+            <button id=moveTileBtn>Move</button>
+            <button id=removeTileBtn>Remove</button>
+        </div>
+
+        <div class="row-container tiles-container"></div>
+        <div class="row-container map-container"></div>
+    </main>
+</section>

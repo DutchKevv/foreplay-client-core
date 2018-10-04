@@ -1,0 +1,35 @@
+.dev-maps-container {
+    .maps-buttons {
+        display: flex;
+        // justify-content: flex-end;
+    
+        a {
+            font-size: 20px;
+    
+            &:hover {
+                color: blue !important;
+            }
+
+            &:last-child {
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+.maps-list {
+    background: white;
+    overflow-y: scroll;
+    max-height: 100px;
+    
+    a {
+        display: block;
+        padding: 2px 6px;
+
+        &.active,
+        &:hover {
+            background: #9393d6;
+            color: white;
+        }
+    }
+}

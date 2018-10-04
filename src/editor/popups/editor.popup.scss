@@ -1,0 +1,48 @@
+.dev-popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.dev-popup {
+    border: 1px solid black;
+    max-width: 800px;
+    background: white;
+    margin: 10px auto;
+
+    header {
+        padding: 10px;
+        color: black;
+        border-bottom: 1px solid grey;
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    main {
+        padding: 10px;
+        color: black;
+    }
+
+    footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        border-top: 1px solid grey;
+
+        button {
+            margin-left: 10px;
+        }
+    }
+}
+
+// bootstrap modal
+.modal-dialog {
+    max-width: 1000px;
+}

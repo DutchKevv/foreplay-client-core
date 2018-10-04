@@ -1,0 +1,48 @@
+<form class="dev-popup dev-popup--create-map">
+    <header>
+        <h3>Create Map</h3>
+    </header>
+    <main>
+        <div class="container">
+            <p class="error-container"></p>
+            <div class='col-xs-12 col-sm-10'>
+                <div class="form-group row">
+                    <label for="createMapFormNameInput" class="col-sm-2 col-form-label">Name</label>
+                    <div>
+                        <input name=createMapFormNameInput type="text" class="form-control" id="createMapFormNameInput" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="createMapFormWidthInput" class="col-sm-2 col-form-label">Width</label>
+                    <div>
+                        <input type="number" class="form-control" name=createMapFormWidthInput id="createMapFormWidthInput" value="100">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="createMapFormHeightInput" class="col-sm-2 col-form-label">Height</label>
+                    <div>
+                        <input type="number" class="form-control" name=createMapFormHeightInput id="createMapFormHeightInput" value="100">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">&nbsp;</label>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" id="createMapFormRandomInput" name="createMapFormRandomInput" class="custom-control-input" checked="checked">
+                        <label class="custom-control-label" for="createMapFormRandomInput">Random fill with object</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">&nbsp;</label>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" id="createMapFormOverwriteInput" name="createMapFormOverwriteInput" class="custom-control-input">
+                        <label class="custom-control-label" for="createMapFormOverwriteInput">Overwrite</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button data-value="create" type=submit class="btn btn-primary">Create</button>
+        <button data-value="cancel" data-autodestroy class="btn btn-default">Cancel</button>
+    </footer>
+</form>

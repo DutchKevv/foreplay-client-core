@@ -1,0 +1,68 @@
+.editor-header {
+    background: #eaeaea;
+
+    /* Navbar container */
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial;
+    }
+
+    > ul {
+        display: flex;
+
+        > li > a {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    li {
+        position: relative;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 0px 10px;
+        color: #000;
+        font-size: 16px;
+
+    }
+
+    ul ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        visibility: hidden;
+        z-index: 1000000;
+        width: 150px;
+
+        li {
+            background: white;
+        }
+    }
+
+    ul ul ul {
+        left: 100%;
+        top: 0;
+    }
+
+    li:hover, li:hover li {
+        background: #ddd;
+    }
+
+    li li:hover, li li:hover li {
+        background: #bbb;
+    }
+
+    li li li:hover {
+        background: #999;
+    }
+
+    li:hover > ul {
+        visibility: visible;
+        // opacity: 1;
+    }
+    
+}
