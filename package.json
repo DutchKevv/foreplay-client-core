@@ -9,9 +9,10 @@
     "build": "webpack --config webpack/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "H.K.Brandsma",
   "license": "ISC",
   "dependencies": {
+    "@foreplay/shared": "file:../shared",
     "@tweenjs/tween.js": "^17.2.0",
     "@types/lodash-es": "^4.17.1",
     "@types/node": "10.11.4",
