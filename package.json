@@ -1,11 +1,11 @@
 {
   "name": "@foreplay/client-core",
   "version": "0.0.1",
-  "description": "engine client core module",
+  "description": "engine core module",
   "main": "src/js/engine.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "webpack --watch --config webpack/webpack.dev.js",
+    "start": "npm link ../foreplay-cli && @foreplay --watch --id=sjonic",
     "build": "webpack --config webpack/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
